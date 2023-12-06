@@ -16,7 +16,7 @@ Kondisional adalah pembuatan / pengambilan keputusan dan mengeksekusi code berda
 
 Kondisional `if` membuat program dapat menentukan dan mengeksekusi suatu code bila kondisi yang dibuat terpenuhi.
 
-```
+```go
 package main
 
 import "fmt"
@@ -37,7 +37,7 @@ func main() {
 
 Kondisional `if-else` membuat program dapat menentukan dan mengeksekusi suatu code sesuai dengan kondisi yang terpenuhi diantara dua kemungkinan.
 
-```
+```go
 package main
 
 import "fmt"
@@ -60,7 +60,7 @@ func main() {
 
 Kondisional `if-else if-else` digunakan ketika terdapat lebih dari dua kondisi dan program harus dapat menentukan dan mengekesekusi suatu kode berdasarkan kondisi yang terpenuhi.
 
-```
+```go
 package main
 
 import "fmt"
@@ -95,7 +95,7 @@ Tipe data numeric mewakili bilangan bulat (`integer`), bilangan pecahan (`float`
 
 Contoh:
 
-```
+```go
 package main
 import ("fmt")
 
@@ -130,7 +130,7 @@ Pada golang, kita tidak dapat melakukan operasi aritmatika bila terdapat perbeda
 
 Contoh:
 
-```
+```go
 package main
 import ("fmt")
 
@@ -165,7 +165,7 @@ Tipe data string memungkinkan penyimpanan data berupa teks dan memiliki berbagai
 
 Contoh:
 
-```
+```go
 import (
   "fmt"
   "strings"
@@ -197,7 +197,7 @@ Tipe data boolean (`bool`) memiliki nilai `True` atau `False`.
 
 Contoh:
 
-```
+```go
 package main
 import ("fmt")
 func main() {
@@ -225,7 +225,7 @@ Tipe data Arrays adalah urutan elemen dengan panjang tertentu.
 
 Contoh:
 
-```
+```go
 package main
 
 import "fmt"
@@ -267,7 +267,7 @@ Tipe data Slice adalah reference elemen array. Slice dapat dibuat, atau bisa jug
 
 Contoh:
 
-```
+```go
 package main
 
 import (
@@ -317,7 +317,7 @@ copy_slice: [ayam sapi domba kelinci rusa kuda]
 
 Tipe data Maps atau yang lebih familiar disebut dictionary di bahasa pemrograman lain memungkinkan penyimpanan data dalam bentuk pasangan kunci-nilai.
 
-```
+```go
 package main
 
 import (
@@ -387,7 +387,7 @@ Perulangan memungkinkan kita untuk melakukan eksekusi terhadap sekelompok pernya
 
 Contoh:
 
-```
+```go
 package main
 import "fmt"
 
@@ -433,7 +433,7 @@ func main() {
 
 Contoh:
 
-```
+```go
 package main
 
 import (
@@ -470,7 +470,7 @@ Untuk membuka file dan membaca keseluruhan file dalam Golang, kita dapat menggun
 
 Contoh:
 
-```
+```go
 package main
 
 import (
@@ -497,7 +497,7 @@ Untuk membuka file dan membaca file baris per baris dalam Golang, kita dapat men
 
 Contoh:
 
-```
+```go
 package main
 
 import (
@@ -540,7 +540,7 @@ Untuk membuka file dan membaca file kata per kata dalam Golang, kita dapat mengg
 
 Contoh:
 
-```
+```go
 package main
 
 import (
@@ -590,7 +590,7 @@ Untuk menulis seluruh konten ke dalam file dalam satu waktu pada Golang, kita da
 
 Contoh:
 
-```
+```go
 package main
 
 import (
@@ -612,7 +612,7 @@ Untuk menulis ke dalam file baris per baris pada Golang, kita dapat menggunakan 
 
 Contoh:
 
-```
+```go
 package main
 
 import (
