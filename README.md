@@ -166,8 +166,9 @@ Tipe data string memungkinkan penyimpanan data berupa teks dan memiliki berbagai
 Contoh:
 
 ```go
+package main
 import (
-  "fmt"
+  "fmt";
   "strings"
 )
 
@@ -182,7 +183,7 @@ func main() {
   
   // Memisahkan kata-kata dengan method Split()
   splittedString := strings.Split(message, " ")
-  fmt.Println(strings.Split(splittedString[0])
+  fmt.Println(splittedString[0])
 }
 
 // Output
@@ -321,49 +322,49 @@ Tipe data Maps atau yang lebih familiar disebut dictionary di bahasa pemrograman
 package main
 
 import (
-    "fmt"
-    "maps"
+	"fmt"
+	"maps"
 )
 
 func main() {
 
-    map1 := make(map[string]int)
-    
-    // append key dan value
-    map1["a1"] = 10
-    map1["a2"] = 15
-    
-    // print maps map1
-    fmt.Println("map:", map1)
-    
-    fmt.Println("len:", len(map1))
-    
-    // membuat variable v1 dan v3 dari elemen maps
-    v1 := map1["a1"]
-    fmt.Println("v1:", v1)
+	map1 := make(map[string]int)
 
-    v3 := map1["a3"]
-    fmt.Println("v3:", v3)
+	// append key dan value
+	map1["a1"] = 10
+	map1["a2"] = 15
 
-    // menghapus elemen a2
-    delete(m, "a2")
-    fmt.Println("map:", map1)
-    
-    // menghapus isi map1
-    clear(map1)
-    fmt.Println("map:", map1)
-    
-    // membuat new_map
-    new_map := map[string]int{"coklat": 1, "permen": 2}
-    fmt.Println("map:", new_map)
-    
-    // membuat new_map_2
-    new_map_2 := map[string]int{"coklat": 1, "permen": 2}
-    
-    // membandingkan new_map dengan new_map_2
-    if maps.Equal(new_map, new_map_2) {
-        fmt.Println("new_map == new_map_2")
-    }
+	// print maps map1
+	fmt.Println("map:", map1)
+
+	fmt.Println("len:", len(map1))
+
+	// membuat variable v1 dan v3 dari elemen maps
+	v1 := map1["a1"]
+	fmt.Println("v1:", v1)
+
+	v3 := map1["a3"]
+	fmt.Println("v3:", v3)
+
+	// menghapus elemen a2
+	delete(map1, "a2")
+	fmt.Println("map:", map1)
+
+	// menghapus isi map1
+	clear(map1)
+	fmt.Println("map:", map1)
+
+	// membuat new_map
+	new_map := map[string]int{"coklat": 1, "permen": 2}
+	fmt.Println("map:", new_map)
+
+	// membuat new_map_2
+	new_map_2 := map[string]int{"coklat": 1, "permen": 2}
+
+	// membandingkan new_map dengan new_map_2
+	if maps.Equal(new_map, new_map_2) {
+		fmt.Println("new_map == new_map_2")
+	}
 }
 
 // Output
@@ -402,14 +403,14 @@ func main() {
 }
 
 // Output
-total = 120
+// total = 120
 ```
 
 ### `for` untuk slice or array
 
 Contoh:
 
-```
+```go
 package main
 
 import (
@@ -425,8 +426,8 @@ func main() {
 }
 
 // Output
-0 Foo
-1 Bar
+// 0 Foo
+// 1 Bar
 ```
 
 ### `for` untuk Maps
@@ -488,7 +489,7 @@ func main() {
 }
 
 // Ouput
-Hello World!!
+// Hello World!!
 ```
 
 ### 2. Membuka File dan Membaca baris per baris
@@ -594,16 +595,15 @@ Contoh:
 package main
 
 import (
-    "log"
-    "os"
+	"log"
+	"os"
 )
 
 func main() {
-    if err := os.WriteFile("file.txt", []byte("Hello World!!"), 0666); err != nil {
-        log.Fatal(err)
-    }
+	if err := os.WriteFile("file_write.txt", []byte("Hello World!!"), 0666); err != nil {
+		log.Fatal(err)
+	}
 }
-
 ```
 
 ### 2. Menulis ke dalam file baris per baris
@@ -632,7 +632,7 @@ var lines = []string{
 
 func main() {
     // create file
-    f, err := os.Create("file.txt")
+    f, err := os.Create("file_write.txt")
     if err != nil {
         log.Fatal(err)
     }
@@ -647,3 +647,36 @@ func main() {
     }
 }
 ```
+
+
+
+## Run Simple Script
+
+### Installation
+
+1. Download file golang Di: [download_url](https://go.dev/doc/install)
+
+2. Restart terminal
+
+3. Cek Versi untuk memastikan bahwa golang sudah terinstall
+
+```
+ go version
+```
+
+### Create Dependencies TO run Program
+1. Masuk ke dalam direktori berisi program go
+
+2. Pilih lah 1 file yang berisi function `main()` untuk di run, kemudian set sebagai init, contoh: sample.go
+
+```
+go mod init sample.go 
+```
+
+3. run program tersebut dengan command:
+
+```
+go run .
+```
+
+4. Program tidak dapat  berjalan jika terdapat lebih dari satu `main()` pada direktori tersebut. Diperlukan pengaturan package dan module kedepannya.
