@@ -16,12 +16,13 @@ func main() {
 	// remember to close the file at the end of the program
 	defer f.Close()
 
-	// read the file line by line using scanner
+	// read the file word by word using scanner
 	scanner := bufio.NewScanner(f)
+	scanner.Split(bufio.ScanWords)
 
 	for scanner.Scan() {
-		// do something with a line
-		fmt.Printf("words: %s\n", scanner.Text())
+		// do something with a word
+		fmt.Println("WORDS: ", scanner.Text())
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -29,6 +30,10 @@ func main() {
 	}
 }
 
-// Output
-// Hello Word!!
-// This is New file!!
+// Ouput
+// Hello
+// Word!!
+// This
+// is
+// New
+// file!!

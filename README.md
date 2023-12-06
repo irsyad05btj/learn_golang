@@ -1,8 +1,8 @@
-# The Go Pragramming Language (Golang)
+# The Go Programming Language (Golang)
 
 ## Penjelasan
 
-Golang adalah bahasa pemograman yang dibuat oleh Google. Dikmebangkan dari tahun 2007 dan dirilis ke publik pada tahun 2012. Bahasa pemograman berbasis prosedural atau POP ( Procedural Oriented Programming). Perbedaan dengan python lainnya adalah bahasa ini bersifat compiled, proses evaluasi atau compiling dilakukan sebelum di run dalam proses build sehinga mengahsilkan compiled file, dan fil tersebut yang di eksekusi (run). 
+Golang adalah bahasa pemograman yang dibuat oleh Google. Dikembangkan dari tahun 2007 dan dirilis ke publik pada tahun 2012. Bahasa pemograman berbasis prosedural atau POP ( Procedural Oriented Programming). Perbedaan dengan python lainnya adalah bahasa ini bersifat compiled, proses evaluasi atau compiling dilakukan sebelum di run dalam proses build sehinga mengahsilkan compiled file, dan file tersebut yang di eksekusi (run). 
 
 ## Struktur Data (Golang)
 
