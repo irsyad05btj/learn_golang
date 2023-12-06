@@ -118,12 +118,12 @@ func main() {
 }
 
 // Output
-Integer:    5
-Integer:    3
-Penjumlahan:  8
-Pengurangan:  2
-Perkalian:    15
-Pembagian:    1
+// Integer:    5
+// Integer:    3
+// Penjumlahan:  8
+// Pengurangan:  2
+// Perkalian:    15
+// Pembagian:    1
 ```
 
 Pada golang, kita tidak dapat melakukan operasi aritmatika bila terdapat perbedaan jenis tipe data numeric, misal penjumlahan bilangan integer dengan bilangan float, ketika operasi aritmatika dilakukan terhadap dua bilangan tersebut maka akan muncul error ketika program di eksekusi.
@@ -153,10 +153,10 @@ func main() {
 }
 
 // Output
-./prog.go:14:17: invalid operation: a + b (mismatched types int and float64)
-./prog.go:15:17: invalid operation: a - b (mismatched types int and float64)
-./prog.go:16:15: invalid operation: a * b (mismatched types int and float64)
-./prog.go:17:15: invalid operation: a / b (mismatched types int and float64)
+// ./prog.go:14:17: invalid operation: a + b (mismatched types int and float64)
+// ./prog.go:15:17: invalid operation: a - b (mismatched types int and float64)
+// ./prog.go:16:15: invalid operation: a * b (mismatched types int and float64)
+// ./prog.go:17:15: invalid operation: a / b (mismatched types int and float64)
 ```
 
 #### 2. Tipe Data String
@@ -186,9 +186,9 @@ func main() {
 }
 
 // Output
-Ini adalah contoh message golang.
-INI ADALAH CONTOH MESSAGE GOLANG.
-Ini
+// Ini adalah contoh message golang.
+// INI ADALAH CONTOH MESSAGE GOLANG.
+// Ini
 ```
 
 #### 3. Tipe Data Bool
@@ -213,8 +213,8 @@ func main() {
 }
 
 // Output
-Boolean:  true
-Ini kondisi ketika nilai benar
+// Boolean:  true
+// Ini kondisi ketika nilai benar
 ```
 
 #### Tipe Data dalam Golang - Lanjutan
@@ -254,11 +254,11 @@ func main() {
 }
 
 // Output
-empty_array: [0 0 0 0]
-set: [0 0 0 80]
-get: 80
-len: 4
-array2: [1 2 3 4 5]
+// empty_array: [0 0 0 0]
+// set: [0 0 0 80]
+// get: 80
+// len: 4
+// array2: [1 2 3 4 5]
 ```
 
 #### Tipe Data Slice
@@ -303,14 +303,14 @@ func main() {
     fmt.Println("copy_slice:", copy_slice)
 
 // Output
-slice1: [] true true
-empty_slice: [  ] len: 3 cap: 3
-set: [ayam sapi domba]
-get: domba
-len: 3
-slice_append: [ayam sapi domba kelinci rusa kuda]
-copy_slice: [ayam sapi domba kelinci rusa kuda]
-}
+// slice1: [] true true
+// empty_slice: [  ] len: 3 cap: 3
+// set: [ayam sapi domba]
+// get: domba
+// len: 3
+// slice_append: [ayam sapi domba kelinci rusa kuda]
+// copy_slice: [ayam sapi domba kelinci rusa kuda]
+// }
 ```
 
 #### 3. Tipe Data Maps
@@ -365,19 +365,16 @@ func main() {
         fmt.Println("new_map == new_map_2")
     }
 }
-'''
 
-Output
-
-'''
-map: map[a1:10 a2:15]
-len: 2
-v1: 10
-v3: 0
-map: map[a1:10]
-map: map[]
-map: map[bar:2 foo:1]
-new_map == new_map_2
+// Output
+//map: map[a1:10 a2:15]
+// len: 2
+// v1: 10
+// v3: 0
+// map: map[a1:10]
+// map: map[]
+// map: map[bar:2 foo:1]
+// new_map == new_map_2
 ```
 
 ## Perulangan / Iterasi dalam Golang
@@ -456,9 +453,9 @@ func main() {
 }
 
 // Output
-ayam 1
-sapi 2
-kambing 3
+// ayam 1
+// sapi 2
+// kambing 3
 ```
 
 ## Manipulasi File / Berkas dalam Golang
@@ -533,8 +530,8 @@ func main() {
 }
 
 // Output
-Hello Word!!
-This is New file!!
+// Hello Word!!
+// This is New file!!
 ```
 
 ### 3. Membuka File dan Membaca kata per kata
@@ -577,12 +574,12 @@ func main() {
 }
 
 // Ouput 
-Hello
-Word!!
-This
-is
-New
-file!!
+// Hello
+// Word!!
+// This
+// is
+// New
+// file!!
 ```
 
 ### Menulis ke File / Berkas
