@@ -365,8 +365,11 @@ func main() {
         fmt.Println("new_map == new_map_2")
     }
 }
+'''
 
-// Output
+Output
+
+'''
 map: map[a1:10 a2:15]
 len: 2
 v1: 10
